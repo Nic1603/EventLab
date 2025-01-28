@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Navigation start */
+nav {
+    height: 16vh;
+    display: flex;
+    background-color: rgb(8, 33, 180);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_container {
+    height: 13vh;
+    width: 200vh;
+    display: flex;
+    padding: 2vh 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    color: white;
+    padding: 1vh 3vh;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 2.5em;
+    font-family: 'oswald', sans-serif;
+}
+
+nav li a:hover {
+    color: rgb(0, 173, 204);
+    transition: all 0.2s ease;
+}
+
+#navbar_logo img {
+    height: 9vh;  
+    width: auto;   
+}
+/* Navigation end */
+
+/* ------------------------------------------------------------- */
+
+/* Hero start */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 33, 180);
+    height: 90vh;
+    width: 150vh;
+    padding: 2em;
+}
+
+.hero_container {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: auto;
+}
+
+.hero_img {
+    display: flex;
+    height: 90vh;
+}
+
+
+.hero h1 {
+    color: white;
+    font-size: 10em;
+    font-family: 'oswald', sans-serif;
+    width: 60vh;
+}
+
+.hero p {
+    color: white;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    width: 60vh;
+}
+/* Hero end */
+
+/* ------------------------------------------------------------- */
+
+/* Main cards start */
+.cards {
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.card_content {
+    padding: 1em;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards h2 {
+    font-size: 4.5em;
+    font-family: 'oswald', sans-serif;
+    margin: 1em;
+}
+
+.cards_container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 160vh;
+    flex-wrap: wrap;
+}
+
+.cards_container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vh;
+    background-color: white; 
+    overflow: hidden;
+    height: 90vh; 
+}
+
+.cards_container img {
+    width: 100%;
+    height: 60vh;
+    border: 3px solid black;
+}
+
+.cards_container h3 {
+    font-size: 2.5em;
+    font-family: 'oswald', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1.8vh;
+}
+
+.cards_container p {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1.5vh;
+}
+
+.meer_afleveringen_btn {
+    display: inline-block;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 1vh;
+    padding: 2vh 3vh;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    margin: 4px 2px;
+    margin-bottom: 2em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.meer_afleveringen_btn:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+/* Main cards end */
+
+/* ------------------------------------------------------------- */
+
+/* Media starts */
+.media {
+    height: 80vh;
+    background-color: rgb(8, 33, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160vh;
+}
+
+.media h2 {
+    font-size: 6vh;
+    font-family: 'oswald', sans-serif;
+    color: white;
+}
+
+.media img {
+    height: 38vh;
+}
+/* Media ends */
+
+
+
+
+/* ------------------------------------------------------------- */
+
+
+
+
+/* Afleveringen start */
+.afleveringen_background {
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(8, 33, 180);
+}
+
+.afleveringen {
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 33, 180);
+    border-radius: 15vh;
+}
+
+.afleveringen_content {
+    padding: 1em;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.afleveringen h2 {
+    font-size: 4.5em;
+    font-family: 'oswald', sans-serif;
+    margin: 1em;
+    color: white;
+}
+
+.afleveringen_container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 160vh;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.afleveringen_container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vh;
+    background-color: rgb(8, 33, 180); 
+    overflow: hidden;
+    height: 90vh; 
+}
+
+.afleveringen_container img {
+    width: 100%;
+    height: 60vh;
+    border: 3px solid white;
+}
+
+.afleveringen_container h3 {
+    font-size: 2.5em;
+    font-family: 'oswald', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1.8vh;
+}
+
+.afleveringen_container p {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1.5vh;
+}
+/* Afleveringen end */
+
+
+
+
+/* ------------------------------------------------------------- */
+
+
+
+
+/* Footer start */
+footer {
+    height: 16vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_container {
+    width: 140vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    height: 8vh;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40vh;
+}
+
+footer p {
+    color: black;
+    font-size: 1.3em;
+}
+
+footer h3 {
+    color: black;
+    font-size: 3em;
+    font-family: 'oswald', sans-serif;
+    padding-bottom: 0.3em;
+}
+/* Footer end */
