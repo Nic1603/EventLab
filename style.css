@@ -592,7 +592,7 @@ nav li a:hover {
     .over_ons_container article {
         width: 50vh; /* Zorgt voor een nette breedte */
         height: 100vh;
-        text-align: center;
+        text-align: start;
         padding: 1.5em;
     }
 
