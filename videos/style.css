@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Navigation start */
+nav {
+    height: 16vh;
+    display: flex;
+    background-color: rgb(8, 33, 180);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_container {
+    height: 13vh;
+    width: 200vh;
+    display: flex;
+    padding: 2vh 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+nav li a {
+    color: white;
+    padding: 1vh 3vh;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 2.5em;
+    font-family: 'oswald', sans-serif;
+}
+
+nav li a:hover {
+    color: rgb(0, 173, 204);
+    transition: all 0.2s ease;
+}
+
+#navbar_logo img {
+    height: 9vh;  
+    width: auto;   
+}
+
+/* Media Query voor Navigation */
+@media (max-width: 2560px) {
+    nav {
+        height: 13vh;
+    }
+
+    .nav_container {
+        width: 160vh;
+        padding: 1em;
+    }
+
+    nav li a {
+        font-size: 2em;
+        padding: 1em 1em;
+    }
+
+    #navbar_logo img {
+        height: 9vh;
+    }
+}
+/* Navigation end */
+
+/* ------------------------------------------------------------- */
+
+/* Hero start */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: rgb(8, 33, 180);
+    height: 90vh;
+    width: 160vh;
+    padding: 10em;
+}
+
+.hero div {
+    background-color: white;
+    height: 0.5vh;
+    width: 70vh;
+}
+
+.hero_container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(8, 33, 180);
+    height: 90vh;
+    width: auto;
+}
+
+.hero_img {
+    display: flex;
+    height: 90vh;
+}
+
+
+.hero h1 {
+    color: white;
+    font-size: 10em;
+    font-family: 'oswald', sans-serif;
+    width: 60vh;
+}
+
+.hero p {
+    color: white;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    width: 60vh;
+}
+
+/* Media Query voor Hero */
+@media (max-width: 2560px) {
+    .hero {
+        width: 100%;
+        padding: 5em 2em;
+    }
+
+    .hero h1 {
+        font-size: 6em;
+        width: 100%;
+    }
+
+    .hero p {
+        font-size: 2em;
+        width: 90vh;
+    }
+
+    .hero div {
+        width: 75%;
+    }
+}
+/* Hero end */
+
+/* ------------------------------------------------------------- */
+
+/* Main cards start */
+.cards {
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.card_content {
+    padding: 1em;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards h2 {
+    font-size: 4.5em;
+    font-family: 'oswald', sans-serif;
+    margin: 1em;
+}
+
+.cards_container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 160vh;
+    flex-wrap: wrap;
+}
+
+.cards_container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vh;
+    background-color: white; 
+    overflow: hidden;
+    height: 90vh; 
+}
+
+.cards_container img {
+    width: 100%;
+    height: 60vh;
+    border: 3px solid black;
+}
+
+.cards_container h3 {
+    font-size: 2.5em;
+    font-family: 'oswald', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1.8vh;
+}
+
+.cards_container p {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1.5vh;
+}
+
+.meer_afleveringen_btn {
+    display: inline-block;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 1vh;
+    padding: 2vh 3vh;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    margin: 4px 2px;
+    margin-bottom: 2em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.meer_afleveringen_btn:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+
+@media (max-width: 2560px) {
+    .cards {
+        height: 150vh;
+    }
+}
+/* Main cards end */
+
+/* ------------------------------------------------------------- */
+
+/* Media starts */
+.media {
+    height: 80vh;
+    background-color: rgb(8, 33, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150vh;
+}
+
+.media h2 {
+    font-size: 7vh;
+    font-family: 'oswald', sans-serif;
+    color: white;
+}
+
+.media img {
+    height: 40vh;
+}
+/* Media ends */
+
+/* ------------------------------------------------------------- */
+
+/* Reviews start */
+.reviews {
+    height: 120vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reviews h2 {
+    font-size: 4em;
+    font-family: 'oswald', sans-serif;
+    color: black;
+    margin-bottom: 2em;
+}
+
+.reviews_container {
+    height: 70vh;
+    width: 80vh;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.review_card h3 {
+    font-size: 2em;
+}
+
+.review_card p {
+    font-size: 3vh;
+}
+
+.row1 {
+    margin: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row2 {
+    margin: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review_card {
+    height: 30vh;
+    width: 60vh;
+    background-color: rgb(8, 33, 180);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2em;
+}
+
+/* Media Query voor Reviews */
+@media (max-width: 2560px) {
+    .reviews {
+        height: auto; 
+        padding: 2em 1em;
+    }
+
+    .reviews h2 {
+        font-size: 7vh; 
+        margin-bottom: 1.5em; 
+        text-align: center;
+    }
+
+    .reviews_container {
+        width: 100%; 
+        height: auto; 
+        padding: 0 1em; 
+    }
+
+    .row1, .row2 {
+        gap: 0.5em;
+        align-items: center; 
+    }
+
+    .review_card {
+        width: 100%; 
+        height: 25vh;
+        padding: 1.5em; 
+    }
+
+    .review_card h3 {
+        font-size: 2vh; 
+    }
+
+    .review_card p {
+        font-size: 2vh; 
+    }
+}
+/* Reviews end */
+
+
+
+
+/* ------------------------------------------------------------- */
+
+
+
+
+/* Afleveringen start */
+.afleveringen {
+    height: 220vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 33, 180);
+}
+
+.afleveringen_content {
+    padding: 1em;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.afleveringen h2 {
+    font-size: 4.5em;
+    font-family: 'oswald', sans-serif;
+    margin: 1em;
+    color: white;
+}
+
+.afleveringen_container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 160vh;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.afleveringen_container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vh;
+    background-color: rgb(8, 33, 180); 
+    overflow: hidden;
+    height: 90vh; 
+}
+
+.afleveringen_container img {
+    width: 100%;
+    height: 60vh;
+    border: 3px solid white;
+}
+
+.afleveringen_container h3 {
+    font-size: 2.5em;
+    font-family: 'oswald', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1.8vh;
+}
+
+.afleveringen_container p {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1.5vh;
+}
+
+@media (max-width: 2560px) {
+    .afleveringen {
+        height: 220vh;
+    }
+
+    .afleveringen h2 {
+        font-size: 4em;
+        margin: 1em;
+    }
+
+    .afleveringen_container article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 42vh;
+        background-color: rgb(8, 33, 180); 
+        overflow: hidden;
+        height: 90vh; 
+    }
+
+    .afleveringen_container h3 {
+        font-size: 2.2em;
+        font-family: 'oswald', sans-serif;
+        margin-top: 1em;
+        margin-bottom: 1.8vh;
+    }
+    
+    .afleveringen_container p {
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 3vh;
+    }
+}
+/* Afleveringen end */
+
+
+
+
+/* ------------------------------------------------------------- */
+
+
+
+
+/* Over Ons start */
+.over_ons {
+    height: 240vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 33, 180);
+}
+
+.over_ons_vid {
+    border: 0.2vh solid white;
+    margin: 5vh;
+}
+
+.over_ons_content {
+    padding: 1em;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.over_ons h2 {
+    font-size: 4.5em;
+    font-family: 'oswald', sans-serif;
+    margin: 0.5em;
+    color: white;
+}
+
+.bar {
+    background-color: white;
+    height: 0.5vh;
+    width: 150vh;
+    margin-bottom: 2.5vh;
+}
+
+.over_ons p {
+    font-size: 2em;
+    color: white;
+    width: 150vh;
+}
+
+.over_ons_container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 160vh;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.over_ons_container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vh;
+    background-color: rgb(8, 33, 180); 
+    overflow: hidden;
+    height: 90vh; 
+}
+
+.over_ons_container img {
+    width: 100%;
+    height: 60vh;
+    border: 3px solid white;
+}
+
+.over_ons_container h3 {
+    font-size: 2.5em;
+    font-family: 'oswald', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1.8vh;
+}
+
+.over_ons_container p {
+    font-size: 1.8em;
+    margin-bottom: 1.5vh;
+    width: 38vh;
+}
+
+@media (max-width: 2560px) {
+    .over_ons {
+        height: 270vh; /* Maakt de sectie dynamischer */
+    }
+
+    .over_ons p {
+        font-size: 1.4em;
+        color: white;
+        width: 150vh;
+    }
+
+    .over_ons_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        width: 160vh; /* Past binnen de resolutie */
+        margin: auto;
+    }
+
+    .over_ons_vid {
+        border: 0.2vh solid white;
+        margin: 5vh;
+        width: 150vh;
+    }
+
+    .over_ons_container article {
+        width: 50vh; /* Zorgt voor een nette breedte */
+        height: 100vh;
+        text-align: start;
+        padding: 1.5em;
+    }
+
+    .over_ons_container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .over_ons_container h3 {
+        font-size: 2em;
+    }
+
+    .over_ons_container p {
+        font-size: 1em;
+        max-width: 38vh;
+    }
+
+    .over_ons_content {
+        padding: 1em;
+        height: 50vh;
+    }
+}
+
+/* Over Ons end */
+
+
+
+
+/* -------------------------------------------------------------- */
+
+
+
+
+/* Footer start */
+footer {
+    height: 16vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_container {
+    width: 140vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    height: 8vh;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40vh;
+}
+
+footer p {
+    color: black;
+    font-size: 1.3em;
+}
+
+footer h3 {
+    color: black;
+    font-size: 3em;
+    font-family: 'oswald', sans-serif;
+    padding-bottom: 0.3em;
+}
+
+/* Media Query voor Footer */
+@media (max-width: 2560px) {
+    footer {
+        height: auto;
+        padding: 1em;
+    }
+
+    .footer_container {
+        align-items: center;
+        width: 120vh;
+    }
+
+    footer img {
+        height: 8vh;
+    }
+
+    footer h3 {
+        font-size: 2em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+/* Footer end */
